@@ -1,0 +1,10 @@
+# Dependencias do robo — versoes fixadas (Fase 3).
+# Justificativa de cada uma em docs/02-DOCUMENTACAO.md (secao 2 - Stack).
+
+paramiko>=4,<5          # Cliente SFTP (autenticacao por senha ou chave .pem)
+smbprotocol>=1.12,<2    # Gravacao no destino SMB (stream por chunks)
+pyodbc>=5,<6            # SQL Server: banco de config + banco LOGS_ROBOS
+python-dotenv>=1,<2     # Carregar variaveis do .env
+
+# ---- Desenvolvimento / testes (Fase 6) ----
+pytest>=8,<9            # Testes automatizados
